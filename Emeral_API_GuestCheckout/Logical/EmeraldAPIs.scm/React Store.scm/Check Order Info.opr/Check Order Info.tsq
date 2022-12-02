@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1617266275692"
     createdUser="STUART.WALKER" id="d67d2c9:1788c912586:-7874"
-    type="test_resource" updatedTimestamp="1652433247452"
-    updatedUser="unknown" version="1.1">
+    type="test_resource" updatedTimestamp="1669976138703"
+    updatedUser="Demo" version="1.1">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
@@ -135,25 +135,28 @@
                         meTy="Message" name="" sch="Http Receive Reply"
                         type="12" version="1.2">
                         <fieldActionGroup>
-                            <fieldAction type="1">
+                            <fieldAction enabled="false" type="1">
                                 <fieldAction anyOrder="false"
-                                    ignoreExtra="false"
+                                    enabled="false" ignoreExtra="false"
                                     ignoreNonPresent="false" type="100"/>
                             </fieldAction>
                         </fieldActionGroup>
                         <_c meTy="String" name="StatusCode"
-                            sch="Http Receive Reply" type="7" version="1.2">
+                            sch="Http Receive Reply" type="7"
+                            value="200" version="1.2">
                             <fieldActionGroup>
-                                <fieldAction type="1">
-                                    <fieldAction exp="200" type="0"/>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="200" type="0"/>
                                 </fieldAction>
                             </fieldActionGroup>
                         </_c>
                         <_c meTy="String" name="ReasonPhrase"
-                            sch="Http Receive Reply" type="7" version="1.2">
+                            sch="Http Receive Reply" type="7" value="OK" version="1.2">
                             <fieldActionGroup>
-                                <fieldAction type="1">
-                                    <fieldAction exp="OK" type="0"/>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="OK" type="0"/>
                                 </fieldAction>
                             </fieldActionGroup>
                         </_c>
@@ -168,7 +171,8 @@
                                 </fieldAction>
                             </fieldActionGroup>
                             <_c meTy="String" name="Version"
-                                sch="Http Receive Reply" type="7" version="1.2">
+                                sch="Http Receive Reply" type="7"
+                                value="HTTP/1.1" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -186,26 +190,29 @@
                                     ignoreNonPresent="false" type="100"/>
                                     </fieldAction>
                                 </fieldActionGroup>
-                                <_c meTy="String" name="server"
-                                    sch="Http Receive Reply" type="7" version="1.2">
+                                <_c meTy="String" name="Server"
+                                    sch="Http Receive Reply" type="7"
+                                    value="nginx/1.21.6" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="nginx/1.19.3" type="0"/>
+                                    exp="nginx/1.21.6" type="0"/>
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
-                                <_c meTy="String" name="date"
-                                    sch="Http Receive Reply" type="7" version="1.2">
+                                <_c meTy="String" name="Date"
+                                    sch="Http Receive Reply" type="7"
+                                    value="Fri, 02 Dec 2022 10:15:08 GMT" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="Thu, 01 Apr 2021 09:49:13 GMT" type="0"/>
+                                    exp="Fri, 02 Dec 2022 10:15:08 GMT" type="0"/>
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
-                                <_c meTy="String" name="content-type"
-                                    sch="Http Receive Reply" type="7" version="1.2">
+                                <_c meTy="String" name="Content-Type"
+                                    sch="Http Receive Reply" type="7"
+                                    value="application/json" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -214,8 +221,9 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String"
-                                    name="transfer-encoding"
-                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    name="Transfer-Encoding"
+                                    sch="Http Receive Reply" type="7"
+                                    value="chunked" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -223,8 +231,9 @@
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
-                                <_c meTy="String" name="connection"
-                                    sch="Http Receive Reply" type="7" version="1.2">
+                                <_c meTy="String" name="Connection"
+                                    sch="Http Receive Reply" type="7"
+                                    value="keep-alive" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -233,7 +242,8 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="vary"
-                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    sch="Http Receive Reply" type="7"
+                                    value="Accept" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -243,7 +253,8 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="content-language"
-                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    sch="Http Receive Reply" type="7"
+                                    value="en-US" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -252,16 +263,28 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="set-cookie"
-                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    sch="Http Receive Reply" type="7"
+                                    value="JSESSIONID=0000q-CpOL0C4I8-PUPniq0x2SZ:-1; Path=/; Secure; HttpOnly" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="JSESSIONID=00000BYRlx5Nv-uWLUr0vPJUCPR:-1; Path=/; HttpOnly" type="0"/>
+                                    exp="JSESSIONID=0000q-CpOL0C4I8-PUPniq0x2SZ:-1; Path=/; Secure; HttpOnly" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="set-cookie"
+                                    sch="Http Receive Reply" type="7"
+                                    value="WC_PERSISTENT=aPe5%2BNY8rNDP0xssIc3bCdTpjxAJkfnVuAlyKIvthVw%3D%3B2022-12-02+10%3A15%3A08.079_1669976108079-313189_0; Path=/; Secure; HttpOnly" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="WC_PERSISTENT=aPe5%2BNY8rNDP0xssIc3bCdTpjxAJkfnVuAlyKIvthVw%3D%3B2022-12-02+10%3A15%3A08.079_1669976108079-313189_0; Path=/; Secure; HttpOnly" type="0"/>
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="expires"
-                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    sch="Http Receive Reply" type="7"
+                                    value="Thu, 01 Dec 1994 16:00:00 GMT" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -270,7 +293,8 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="cache-control"
-                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    sch="Http Receive Reply" type="7"
+                                    value="no-cache=&quot;set-cookie, set-cookie2&quot;" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -280,16 +304,18 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="x-envoy-upstream-service-time"
-                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    sch="Http Receive Reply" type="7"
+                                    value="47" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="48" type="0"/>
+                                    exp="47" type="0"/>
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
-                                <_c meTy="String" name="cache-control"
-                                    sch="Http Receive Reply" type="7" version="1.2">
+                                <_c meTy="String" name="Cache-Control"
+                                    sch="Http Receive Reply" type="7"
+                                    value="no-store" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -298,12 +324,10 @@
                                     </fieldActionGroup>
                                 </_c>
                             </_c>
-                            <_c meTy="Boolean" name="followRedirects"
-                                optional="true" sch="Http Receive Reply"
-                                type="8" version="1.2"/>
                         </_c>
                         <_c meTy="String" name="MessageType"
-                            sch="Http Receive Reply" type="7" version="1.2">
+                            sch="Http Receive Reply" type="7"
+                            value="http.text.message.type" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -312,11 +336,12 @@
                             </fieldActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2">
+                            sch="Http Receive Reply" type="11"
+                            value="11:15:07.990 2022/12/02" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="10:49:13.015 2021/04/01" type="0"/>
+                                    exp="11:15:07.990 2022/12/02" type="0"/>
                                 </fieldAction>
                             </fieldActionGroup>
                         </_c>
@@ -342,7 +367,7 @@
                             <fieldExpander
                                 fieldExpanderID="JSON.fieldexpander"
                                 fieldSchema="JSON" fieldSchemaRoot="Object"/>
-                            <contentTree>{"totalShippingCharge":"0.00000","orderTypeCode":"ORD","resourceId":"https://commerce-preview.sbx0049.play.products.pnpsofy.com:5443/wcs/resources/store/11/order/36511373?langId=-1","orderId":"36511373","lastUpdateDate":"2021-04-01T09:49:12.835Z","channel":{"channelIdentifer":{"channelName":"Telesales","uniqueID":"-4"},"userData":null,"description":{"language":"-1","value":"Used when operations performed by a telesales representative."}},"orderStatus":"M","x_isPurchaseOrderNumberRequired":"false","totalShippingChargeCurrency":"USD","buyerId":"38","grandTotalCurrency":"USD","recordSetCount":"1","paymentInstruction":[{"piId":"10019","country":"test","personTitle":"","lastName":"test","zipCode":"401234","city":"test","postalCode":"401234","phone2":"","phone2Publish":"true","phone1Publish":"true","piDescription":"Cash on delivery","payMethodId":"COD","phone1":"","xpaym_tokenization":"false","email2":"","email1":"test@test.com","xpaym_policyId":"14506","fax2":"","state":"test","fax1":"","piAmount":"724.99000","billing_address_id":"3074457357707646707","nickName":"Test","addressLine":["test","test",""],"piLanguage":"-1","stateOrProvinceName":"test","piStatus":"Success","firstName":"test","piCurrency":"USD","protocolData":[{"name":"billing_address_id","value":"3074457357707646707"},{"name":"billto_zipcode","value":"401234"},{"name":"billto_address1","value":"test"},{"name":"billto_country","value":"test"},{"name":"billto_lastname","value":"test"},{"name":"billto_stateprovince","value":"test"},{"name":"billto_city","value":"test"},{"name":"billto_firstname","value":"test"},{"name":"payment_method","value":"COD"}],"middleName":"","xpaym_punchoutPayment":"false"}],"x_isPersonalAddressesAllowedForShipping":"true","storeNameIdentifier":"Emerald","totalProductPriceCurrency":"USD","totalProductPrice":"749.99000","locked":"false","placedDate":"2021-04-01T09:49:12.830Z","recordSetComplete":"true","totalAdjustmentCurrency":"USD","totalSalesTaxCurrency":"USD","totalSalesTax":"0.00000","orderItem":[{"zipCode":"401234","personTitle":"","country":"test","unitUom":"C62","shippingChargeCurrency":"USD","lastUpdateDate":"2021-04-01T09:49:12.830Z","postalCode":"401234","phone2":"","availableDate":"2021-04-01T09:49:12.780Z","phone2Publish":"true","salesTax":"0.00000","phone1Publish":"true","phone1":"","addressId":"3074457357707646707","correlationGroup":"10033","email2":"","email1":"test@test.com","fax2":"","shippingCharge":"0.00000","fax1":"","state":"test","orderItemPrice":"749.99000","shipModeLanguage":"-1","unitPrice":"749.99000","productId":"14020","shipModeCode":"Mail","shipModeDescription":"Mail","nickName":"Test","fulfillmentCenterName":"Emerald","firstName":"test","adjustment":[{"amount":"-25.00000","code":"Save $25 on all orders over $200 USD","usage":"Discount","description":"Save $25 on all orders over $200 USD","currency":"USD","language":"-1"}],"totalAdjustment":{"currency":"USD","value":"-25.00000"},"orderItemInventoryStatus":"Allocated","lastName":"test","city":"test","expectedShipDate":"2021-04-02T09:49:13.038Z","shippingTax":"0.00000","orderItemStatus":"M","offerID":"4000000000000008039","currency":"USD","createDate":"2021-04-01T09:49:10.886Z","salesTaxCurrency":"USD","quantity":"1.0","fulfillmentCenterId":"13001","orderItemId":"10033","xitem_memberId":"25","shipModeId":"14001","orderItemFulfillmentStatus":"Unreleased","isExpedited":"false","addressLine":["test","test",""],"shippingTaxCurrency":"USD","stateOrProvinceName":"test","carrier":"Mail","UOM":"C62","freeGift":"false","unitQuantity":"1.0","contractId":"-11005","middleName":"","partNumber":"LR-FNTR-0001-0002"}],"grandTotal":"724.99000","storeUniqueID":"11","recordSetStartNumber":"0","resourceName":"order","recordSetTotal":"1","shipAsComplete":"true","x_trackingIds":"","totalShippingTax":"0.00000","prepareIndicator":"true","totalShippingTaxCurrency":"USD","adjustment":[{"amount":"-25.00000","code":"Save $25 on all orders over $200 USD","displayLevel":"Order","usage":"Discount","descriptionLanguage":"-1","xadju_calUsageId":"-1","description":"Save $25 on all orders over $200 USD","currency":"USD"}],"totalAdjustment":"-25.00000"}<defaultActions>
+                            <contentTree>{"totalShippingCharge":"0.00000","orderTypeCode":"ORD","resourceId":"https://commerce-preview.sbx0384.play.hclsofy.com:5443/wcs/resources/store/11/order/81212314?langId=-1","orderId":"81212314","lastUpdateDate":"2022-12-02T10:15:07.860Z","channel":{"channelIdentifer":{"channelName":"Telesales","uniqueID":"-4"},"userData":null,"description":{"language":"-1","value":"Used when operations performed by a telesales representative."}},"orderStatus":"M","x_isPurchaseOrderNumberRequired":"false","totalShippingChargeCurrency":"USD","buyerId":"78","grandTotalCurrency":"USD","recordSetCount":"1","paymentInstruction":[{"piId":"10013","country":"test","personTitle":"","lastName":"test","zipCode":"401234","city":"test","postalCode":"401234","phone2":"","phone2Publish":"true","phone1Publish":"true","piDescription":"Cash on delivery","payMethodId":"COD","phone1":"","xpaym_tokenization":"false","email2":"","email1":"test@test.com","xpaym_policyId":"14506","fax2":"","state":"test","fax1":"","piAmount":"724.99000","billing_address_id":"3074457359265917404","nickName":"Test","addressLine":["test","test",""],"piLanguage":"-1","stateOrProvinceName":"test","piStatus":"Success","firstName":"test","piCurrency":"USD","protocolData":[{"name":"billing_address_id","value":"3074457359265917404"},{"name":"billto_zipcode","value":"401234"},{"name":"billto_address1","value":"test"},{"name":"billto_country","value":"test"},{"name":"billto_lastname","value":"test"},{"name":"billto_stateprovince","value":"test"},{"name":"billto_city","value":"test"},{"name":"payment_method","value":"COD"},{"name":"billto_firstname","value":"test"}],"middleName":"","xpaym_punchoutPayment":"false"}],"x_isPersonalAddressesAllowedForShipping":"true","storeNameIdentifier":"Emerald","totalProductPriceCurrency":"USD","totalProductPrice":"749.99000","locked":"false","placedDate":"2022-12-02T10:15:07.706Z","recordSetComplete":"true","totalAdjustmentCurrency":"USD","totalSalesTaxCurrency":"USD","totalSalesTax":"0.00000","orderItem":[{"zipCode":"401234","personTitle":"","country":"test","unitUom":"C62","shippingChargeCurrency":"USD","lastUpdateDate":"2022-12-02T10:15:07.706Z","postalCode":"401234","phone2":"","availableDate":"2022-12-02T10:15:07.586Z","phone2Publish":"true","salesTax":"0.00000","phone1Publish":"true","phone1":"","addressId":"3074457359265917404","correlationGroup":"10076","email2":"","email1":"test@test.com","fax2":"","shippingCharge":"0.00000","fax1":"","state":"test","orderItemPrice":"749.99000","shipModeLanguage":"-1","unitPrice":"749.99000","productId":"14020","shipModeCode":"Mail","shipModeDescription":"Mail","nickName":"Test","fulfillmentCenterName":"Emerald","firstName":"test","adjustment":[{"amount":"-25.00000","code":"Save $25 on all orders over $200 USD","usage":"Discount","description":"Save $25 on all orders over $200 USD","currency":"USD","language":"-1"}],"totalAdjustment":{"currency":"USD","value":"-25.00000"},"orderItemInventoryStatus":"Allocated","lastName":"test","city":"test","expectedShipDate":"2022-12-03T10:15:08.116Z","xitem_isPersonalAddressesAllowedForShipping":"true","shippingTax":"0.00000","orderItemStatus":"M","offerID":"18039","currency":"USD","createDate":"2022-12-02T10:15:04.432Z","salesTaxCurrency":"USD","quantity":"1.0","fulfillmentCenterId":"13001","orderItemId":"10076","shipModeId":"14501","xitem_memberId":"78","orderItemFulfillmentStatus":"Unreleased","isExpedited":"false","addressLine":["test","test",""],"shippingTaxCurrency":"USD","stateOrProvinceName":"test","carrier":"Mail","UOM":"C62","fulfillmentCenterOwnerId":"-11000","freeGift":"false","unitQuantity":"1.0","contractId":"-11005","middleName":"","partNumber":"LR-FNTR-0001-0002"}],"grandTotal":"724.99000","storeUniqueID":"11","recordSetStartNumber":"0","resourceName":"order","recordSetTotal":"1","shipAsComplete":"true","x_trackingIds":"","totalShippingTax":"0.00000","prepareIndicator":"true","totalShippingTaxCurrency":"USD","adjustment":[{"amount":"-25.00000","code":"Save $25 on all orders over $200 USD","displayLevel":"Order","usage":"Discount","descriptionLanguage":"-1","xadju_calUsageId":"-1","description":"Save $25 on all orders over $200 USD","currency":"USD"}],"totalAdjustment":"-25.00000"}<defaultActions>
                                     <defaultMessageActions>
                                     <fieldActionGroup>
                                     <fieldAction type="1">
@@ -379,30 +404,51 @@
                                     <updateField path="/text/Object">
                                     <_c assocdefid="Object"/>
                                     </updateField>
+                                    <updateField path="/text/Object/totalShippingCharge">
+                                    <_c value="0.00000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderTypeCode">
+                                    <_c value="ORD"/>
+                                    </updateField>
                                     <setAction index="2"
                                     path="/text/Object/resourceId"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="https://commerce-preview.sbx0049.play.products.pnpsofy.com:5443/wcs/resources/store/11/order/36511373?langId=-1" type="0"/>
+                                    exp="https://commerce-preview.sbx0384.play.hclsofy.com:5443/wcs/resources/store/11/order/81212314?langId=-1" type="0"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/resourceId">
+                                    <_c value="https://commerce-preview.sbx0384.play.hclsofy.com:5443/wcs/resources/store/11/order/81212314?langId=-1"/>
+                                    </updateField>
                                     <setAction index="3"
                                     path="/text/Object/orderId"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="36511373" type="0"/>
+                                    exp="81212314" type="0"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/orderId">
+                                    <_c value="81212314"/>
+                                    </updateField>
                                     <setAction index="4"
                                     path="/text/Object/lastUpdateDate"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="2021-04-01T09:49:12.835Z" type="0"/>
+                                    exp="2022-12-02T10:15:07.860Z" type="0"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/lastUpdateDate">
+                                    <_c value="2022-12-02T10:15:07.860Z"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/channel/channelIdentifer/channelName">
+                                    <_c value="Telesales"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/channel/channelIdentifer/uniqueID">
+                                    <_c value="-4"/>
+                                    </updateField>
                                     <setAction index="1"
                                     path="/text/Object/channel/userData"
                                     replaceActionType="0" replaceOuterType="1">
@@ -410,14 +456,38 @@
                                     <fieldAction type="8"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/channel/description/language">
+                                    <_c value="-1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/channel/description/value">
+                                    <_c value="Used when operations performed by a telesales representative."/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderStatus">
+                                    <_c value="M"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/x_isPurchaseOrderNumberRequired">
+                                    <_c value="false"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/totalShippingChargeCurrency">
+                                    <_c value="USD"/>
+                                    </updateField>
                                     <setAction index="9"
                                     path="/text/Object/buyerId"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="38" type="0"/>
+                                    exp="78" type="0"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/buyerId">
+                                    <_c value="78"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/grandTotalCurrency">
+                                    <_c value="USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/recordSetCount">
+                                    <_c value="1"/>
+                                    </updateField>
                                     <updateField path="/text/Object/paymentInstruction">
                                     <_c assocdefid="Array"/>
                                     </updateField>
@@ -429,86 +499,249 @@
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="10019" type="0"/>
+                                    exp="10013" type="0"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/paymentInstruction/0/piId">
+                                    <_c value="10013"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/country">
+                                    <_c value="test"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/personTitle">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/lastName">
+                                    <_c value="test"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/zipCode">
+                                    <_c value="401234"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/city">
+                                    <_c value="test"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/postalCode">
+                                    <_c value="401234"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/phone2">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/phone2Publish">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/phone1Publish">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/piDescription">
+                                    <_c value="Cash on delivery"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/payMethodId">
+                                    <_c value="COD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/phone1">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/xpaym_tokenization">
+                                    <_c value="false"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/email2">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/email1">
+                                    <_c value="test@test.com"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/xpaym_policyId">
+                                    <_c value="14506"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/fax2">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/state">
+                                    <_c value="test"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/fax1">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/piAmount">
+                                    <_c value="724.99000"/>
+                                    </updateField>
                                     <setAction index="21"
                                     path="/text/Object/paymentInstruction/0/billing_address_id"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="3074457357707646707" type="0"/>
+                                    exp="3074457359265917404" type="0"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/paymentInstruction/0/billing_address_id">
+                                    <_c value="3074457359265917404"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/nickName">
+                                    <_c value="Test"/>
+                                    </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/addressLine">
                                     <_c assocdefid="Array"/>
                                     </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/addressLine/0">
-                                    <_c name="0"/>
+                                    <_c name="0" value="test"/>
                                     </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/addressLine/1">
-                                    <_c name="1"/>
+                                    <_c name="1" value="test"/>
                                     </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/addressLine/2">
-                                    <_c name="2"/>
+                                    <_c name="2" value=""/>
                                     </updateField>
-                                    <setAction index="29"
-                                    path="/text/Object/paymentInstruction/0/protocolData"
-                                    replaceActionType="100" replaceOuterType="1">
-                                    <fieldAction enabled="false" type="1">
-                                    <fieldAction
-                                    anyOrder="false"
-                                    enabled="false"
-                                    ignoreExtra="false"
-                                    ignoreNonPresent="false" type="100"/>
-                                    </fieldAction>
-                                    </setAction>
+                                    <updateField path="/text/Object/paymentInstruction/0/piLanguage">
+                                    <_c value="-1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/stateOrProvinceName">
+                                    <_c value="test"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/piStatus">
+                                    <_c value="Success"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/firstName">
+                                    <_c value="test"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/piCurrency">
+                                    <_c value="USD"/>
+                                    </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/protocolData">
                                     <_c assocdefid="Array"/>
                                     </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/protocolData/0">
                                     <_c name="0"/>
                                     </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/0/name">
+                                    <_c value="billing_address_id"/>
+                                    </updateField>
                                     <setAction index="1"
                                     path="/text/Object/paymentInstruction/0/protocolData/0/value"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="3074457357707646707" type="0"/>
+                                    exp="3074457359265917404" type="0"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/0/value">
+                                    <_c value="3074457359265917404"/>
+                                    </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/protocolData/1">
                                     <_c name="1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/1/name">
+                                    <_c value="billto_zipcode"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/1/value">
+                                    <_c value="401234"/>
                                     </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/protocolData/2">
                                     <_c name="2"/>
                                     </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/2/name">
+                                    <_c value="billto_address1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/2/value">
+                                    <_c value="test"/>
+                                    </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/protocolData/3">
                                     <_c name="3"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/3/name">
+                                    <_c value="billto_country"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/3/value">
+                                    <_c value="test"/>
                                     </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/protocolData/4">
                                     <_c name="4"/>
                                     </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/4/name">
+                                    <_c value="billto_lastname"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/4/value">
+                                    <_c value="test"/>
+                                    </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/protocolData/5">
                                     <_c name="5"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/5/name">
+                                    <_c value="billto_stateprovince"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/5/value">
+                                    <_c value="test"/>
                                     </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/protocolData/6">
                                     <_c name="6"/>
                                     </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/6/name">
+                                    <_c value="billto_city"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/6/value">
+                                    <_c value="test"/>
+                                    </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/protocolData/7">
                                     <_c name="7"/>
                                     </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/7/name">
+                                    <_c value="payment_method"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/7/value">
+                                    <_c value="COD"/>
+                                    </updateField>
                                     <updateField path="/text/Object/paymentInstruction/0/protocolData/8">
                                     <_c name="8"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/8/name">
+                                    <_c value="billto_firstname"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/protocolData/8/value">
+                                    <_c value="test"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/middleName">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/paymentInstruction/0/xpaym_punchoutPayment">
+                                    <_c value="false"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/x_isPersonalAddressesAllowedForShipping">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/storeNameIdentifier">
+                                    <_c value="Emerald"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/totalProductPriceCurrency">
+                                    <_c value="USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/totalProductPrice">
+                                    <_c value="749.99000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/locked">
+                                    <_c value="false"/>
                                     </updateField>
                                     <setAction index="18"
                                     path="/text/Object/placedDate"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="2021-04-01T09:49:12.830Z" type="0"/>
+                                    exp="2022-12-02T10:15:07.706Z" type="0"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/placedDate">
+                                    <_c value="2022-12-02T10:15:07.706Z"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/recordSetComplete">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/totalAdjustmentCurrency">
+                                    <_c value="USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/totalSalesTaxCurrency">
+                                    <_c value="USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/totalSalesTax">
+                                    <_c value="0.00000"/>
+                                    </updateField>
                                     <updateField path="/text/Object/orderItem">
                                     <_c assocdefid="Array"/>
                                     </updateField>
@@ -524,109 +757,361 @@
                                     <updateField path="/text/Object/orderItem/0">
                                     <_c name="0"/>
                                     </updateField>
+                                    <updateField path="/text/Object/orderItem/0/zipCode">
+                                    <_c value="401234"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/personTitle">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/country">
+                                    <_c value="test"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/unitUom">
+                                    <_c value="C62"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/shippingChargeCurrency">
+                                    <_c value="USD"/>
+                                    </updateField>
                                     <setAction index="5"
                                     path="/text/Object/orderItem/0/lastUpdateDate"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="2021-04-01T09:49:12.830Z" type="0"/>
+                                    exp="2022-12-02T10:15:07.706Z" type="0"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/orderItem/0/lastUpdateDate">
+                                    <_c value="2022-12-02T10:15:07.706Z"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/postalCode">
+                                    <_c value="401234"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/phone2">
+                                    <_c value=""/>
+                                    </updateField>
                                     <setAction index="8"
                                     path="/text/Object/orderItem/0/availableDate"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="2021-04-01T09:49:12.780Z" type="0"/>
+                                    exp="2022-12-02T10:15:07.586Z" type="0"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/orderItem/0/availableDate">
+                                    <_c value="2022-12-02T10:15:07.586Z"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/phone2Publish">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/salesTax">
+                                    <_c value="0.00000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/phone1Publish">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/phone1">
+                                    <_c value=""/>
+                                    </updateField>
                                     <setAction index="13"
                                     path="/text/Object/orderItem/0/addressId"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="3074457357707646707" type="0"/>
+                                    exp="3074457359265917404" type="0"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/orderItem/0/addressId">
+                                    <_c value="3074457359265917404"/>
+                                    </updateField>
                                     <setAction index="14"
                                     path="/text/Object/orderItem/0/correlationGroup"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="10033" type="0"/>
+                                    exp="10076" type="0"/>
                                     </fieldAction>
                                     </setAction>
+                                    <updateField path="/text/Object/orderItem/0/correlationGroup">
+                                    <_c value="10076"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/email2">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/email1">
+                                    <_c value="test@test.com"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/fax2">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/shippingCharge">
+                                    <_c value="0.00000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/fax1">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/state">
+                                    <_c value="test"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/orderItemPrice">
+                                    <_c value="749.99000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/shipModeLanguage">
+                                    <_c value="-1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/unitPrice">
+                                    <_c value="749.99000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/productId">
+                                    <_c value="14020"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/shipModeCode">
+                                    <_c value="Mail"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/shipModeDescription">
+                                    <_c value="Mail"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/nickName">
+                                    <_c value="Test"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/fulfillmentCenterName">
+                                    <_c value="Emerald"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/firstName">
+                                    <_c value="test"/>
+                                    </updateField>
                                     <updateField path="/text/Object/orderItem/0/adjustment">
                                     <_c assocdefid="Array"/>
                                     </updateField>
                                     <updateField path="/text/Object/orderItem/0/adjustment/0">
                                     <_c name="0"/>
                                     </updateField>
+                                    <updateField path="/text/Object/orderItem/0/adjustment/0/amount">
+                                    <_c value="-25.00000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/adjustment/0/code">
+                                    <_c value="Save $25 on all orders over $200 USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/adjustment/0/usage">
+                                    <_c value="Discount"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/adjustment/0/description">
+                                    <_c value="Save $25 on all orders over $200 USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/adjustment/0/currency">
+                                    <_c value="USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/adjustment/0/language">
+                                    <_c value="-1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/totalAdjustment/currency">
+                                    <_c value="USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/totalAdjustment/value">
+                                    <_c value="-25.00000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/orderItemInventoryStatus">
+                                    <_c value="Allocated"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/lastName">
+                                    <_c value="test"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/city">
+                                    <_c value="test"/>
+                                    </updateField>
                                     <setAction index="35"
                                     path="/text/Object/orderItem/0/expectedShipDate"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="2021-04-02T09:49:13.038Z" type="0"/>
+                                    exp="2022-12-03T10:15:08.116Z" type="0"/>
                                     </fieldAction>
                                     </setAction>
-                                    <setAction index="38"
+                                    <updateField path="/text/Object/orderItem/0/expectedShipDate">
+                                    <_c value="2022-12-03T10:15:08.116Z"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/xitem_isPersonalAddressesAllowedForShipping">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/shippingTax">
+                                    <_c value="0.00000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/orderItemStatus">
+                                    <_c value="M"/>
+                                    </updateField>
+                                    <setAction index="39"
                                     path="/text/Object/orderItem/0/offerID"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="4000000000000008039" type="0"/>
+                                    exp="18039" type="0"/>
                                     </fieldAction>
                                     </setAction>
-                                    <setAction index="40"
+                                    <updateField path="/text/Object/orderItem/0/offerID">
+                                    <_c value="18039"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/currency">
+                                    <_c value="USD"/>
+                                    </updateField>
+                                    <setAction index="41"
                                     path="/text/Object/orderItem/0/createDate"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="2021-04-01T09:49:10.886Z" type="0"/>
+                                    exp="2022-12-02T10:15:04.432Z" type="0"/>
                                     </fieldAction>
                                     </setAction>
-                                    <setAction index="44"
+                                    <updateField path="/text/Object/orderItem/0/createDate">
+                                    <_c value="2022-12-02T10:15:04.432Z"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/salesTaxCurrency">
+                                    <_c value="USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/quantity">
+                                    <_c value="1.0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/fulfillmentCenterId">
+                                    <_c value="13001"/>
+                                    </updateField>
+                                    <setAction index="45"
                                     path="/text/Object/orderItem/0/orderItemId"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="10033" type="0"/>
+                                    exp="10076" type="0"/>
                                     </fieldAction>
                                     </setAction>
-                                    <setAction index="45"
+                                    <updateField path="/text/Object/orderItem/0/orderItemId">
+                                    <_c value="10076"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/shipModeId">
+                                    <_c value="14501"/>
+                                    </updateField>
+                                    <setAction index="47"
                                     path="/text/Object/orderItem/0/xitem_memberId"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="25" type="0"/>
+                                    exp="78" type="0"/>
                                     </fieldAction>
                                     </setAction>
-                                    <setAction index="45" path="/text/Object/orderItem/0/xitem_memberId">
+                                    <setAction index="47" path="/text/Object/orderItem/0/xitem_memberId">
                                     <fieldAction type="0">
                                     <fieldAction exp="25" type="0"/>
                                     </fieldAction>
                                     </setAction>
                                     <updateField path="/text/Object/orderItem/0/xitem_memberId">
-                                    <_c value="25"/>
+                                    <_c value="78"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/orderItemFulfillmentStatus">
+                                    <_c value="Unreleased"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/isExpedited">
+                                    <_c value="false"/>
                                     </updateField>
                                     <updateField path="/text/Object/orderItem/0/addressLine">
                                     <_c assocdefid="Array"/>
                                     </updateField>
                                     <updateField path="/text/Object/orderItem/0/addressLine/0">
-                                    <_c name="0"/>
+                                    <_c name="0" value="test"/>
                                     </updateField>
                                     <updateField path="/text/Object/orderItem/0/addressLine/1">
-                                    <_c name="1"/>
+                                    <_c name="1" value="test"/>
                                     </updateField>
                                     <updateField path="/text/Object/orderItem/0/addressLine/2">
-                                    <_c name="2"/>
+                                    <_c name="2" value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/shippingTaxCurrency">
+                                    <_c value="USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/stateOrProvinceName">
+                                    <_c value="test"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/carrier">
+                                    <_c value="Mail"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/UOM">
+                                    <_c value="C62"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/fulfillmentCenterOwnerId">
+                                    <_c value="-11000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/freeGift">
+                                    <_c value="false"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/unitQuantity">
+                                    <_c value="1.0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/contractId">
+                                    <_c value="-11005"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/middleName">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/orderItem/0/partNumber">
+                                    <_c value="LR-FNTR-0001-0002"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/grandTotal">
+                                    <_c value="724.99000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/storeUniqueID">
+                                    <_c value="11"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/recordSetStartNumber">
+                                    <_c value="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/resourceName">
+                                    <_c value="order"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/recordSetTotal">
+                                    <_c value="1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/shipAsComplete">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/x_trackingIds">
+                                    <_c value=""/>
+                                    </updateField>
+                                    <updateField path="/text/Object/totalShippingTax">
+                                    <_c value="0.00000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/prepareIndicator">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/totalShippingTaxCurrency">
+                                    <_c value="USD"/>
                                     </updateField>
                                     <updateField path="/text/Object/adjustment">
                                     <_c assocdefid="Array"/>
                                     </updateField>
                                     <updateField path="/text/Object/adjustment/0">
                                     <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/adjustment/0/amount">
+                                    <_c value="-25.00000"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/adjustment/0/code">
+                                    <_c value="Save $25 on all orders over $200 USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/adjustment/0/displayLevel">
+                                    <_c value="Order"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/adjustment/0/usage">
+                                    <_c value="Discount"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/adjustment/0/descriptionLanguage">
+                                    <_c value="-1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/adjustment/0/xadju_calUsageId">
+                                    <_c value="-1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/adjustment/0/description">
+                                    <_c value="Save $25 on all orders over $200 USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/adjustment/0/currency">
+                                    <_c value="USD"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/totalAdjustment">
+                                    <_c value="-25.00000"/>
                                     </updateField>
                                 </updates>
                             </contentTree>

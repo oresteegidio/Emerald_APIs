@@ -60,15 +60,9 @@
         <dbConnectionParameters maxConnections="5" poolName="DefaultPoolName">
             <connectionParams ZOSEnv="false"
                 dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
-<<<<<<< HEAD
                 dpsOption="false" dpsPass="#com.ghc.1!201b" dpsUser=""
                 driverClass="" password="#com.ghc.1!beab" schema=""
                 url="" user="">
-=======
-                dpsPass="#com.ghc.1!e50f" dpsUser="" driverClass=""
-                password="#com.ghc.1!6db7" schema="" url=""
-                useSsl="false" user="">
->>>>>>> 1adfe8946207c2ff325901c93e46af95b015cfed
                 <dpsSsl useSsl="false"/>
                 <stubSettings maxProcCallCount="10000"
                     maxResultSetRowCount="10000" maxRowCount="10000"
@@ -89,14 +83,10 @@
             hostname="hcl-onetest.sbx0189.play.hclsofy.com" port="443"
             projectId="75800" projectName="ForDemo"
             publishResults="false" trustSource="TRUST_ALL"
-<<<<<<< HEAD
-            trustStorePassword="#com.ghc.1!5fef" trustStorePath=""/>
-=======
-            trustStorePassword="#com.ghc.1!02bd" trustStorePath=""/>
->>>>>>> 1adfe8946207c2ff325901c93e46af95b015cfed
+            trustStorePassword="#com.ghc.1!46fd" trustStorePath=""/>
     </serverSettings>
     <permissionsSettings ADtrustSource="NONE"
-        ADtrustStorePassword="#com.ghc.1!ec93" ADtrustStorePath=""
+        ADtrustStorePassword="#com.ghc.1!b559" ADtrustStorePath=""
         autoLogin="true" host="AP-PNP-DC02"
         permFactId="ldap.permissions.factory.none" port="389" pswd="Ekca1HttlIsCuz+5UctxZ1mamQlwaHAsx4PJfoZwDn4=$0CDWbH5WcSUHXUuQxi4eESexJBcaaXueG2cD9xuxHHQ="/>
     <resultPublishers disableAll="false"/>

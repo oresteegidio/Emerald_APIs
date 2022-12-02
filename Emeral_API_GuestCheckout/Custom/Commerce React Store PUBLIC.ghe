@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1617266272444"
     createdUser="STUART.WALKER" id="d67d2c9:1788c912586:-7de1"
-    type="environment_resource" updatedTimestamp="1643800657425"
-    updatedUser="Admin" version="1.0">
-    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    type="environment_resource" updatedTimestamp="1669975713429"
+    updatedUser="Demo" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
         <environmentVariable evdescription="" key="addressId" value="9652022076"/>
-        <environmentVariable evdescription="" key="baseUrl_HOST" value="DESKTOP-G13Q323"/>
+        <environmentVariable evdescription="" key="baseUrl_HOST" value="DESKTOP-P6BEUOS"/>
         <environmentVariable evdescription="" key="baseUrl_PATH" value="/RTCP/examples/phonebook/api"/>
         <environmentVariable evdescription="" key="baseUrl_PORT" value="7443"/>
-        <environmentVariable evdescription="" key="bda-hostname" value="commerce-preview.sbx0279.play.hclsofy.com"/>
+        <environmentVariable evdescription="" key="bda-hostname" value="commerce-preview.sbx0384.play.hclsofy.com"/>
         <environmentVariable evdescription="" key="catalogId" value="11501"/>
         <environmentVariable evdescription="" key="categoryId" value="10502"/>
         <environmentVariable evdescription="" key="contractId" value="-11005"/>
