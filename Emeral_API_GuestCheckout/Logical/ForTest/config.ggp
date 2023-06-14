@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1686304127886"
+    createdUser="appscanadmin" id="-220e2e1d:1889f8e4e94:-7e2f"
+    type="grouping_resource" updatedTimestamp="1686304127886"
+    updatedUser="appscanadmin" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+</editableResource>

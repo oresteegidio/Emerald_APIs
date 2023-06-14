@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1686586918661"
+    createdUser="appscanadmin" id="257b42c3:188b06826f6:-7e51"
+    references="257b42c3:188b06826f6:-7dde" type="test_resource"
+    updatedTimestamp="1686675966239" updatedUser="appscanadmin" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="257b42c3:188b06826f6:-7e1e"
+                references="257b42c3:188b06826f6:-7dde"
+                selfDescribing="Choose a transport and formatter on which to receive and validate a message."
+                type="subscribe_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="GH Text"
+                    name="&quot;Text&quot; to file &quot;%%PROJECT/ROOT_DIRECTORY%%/Custom/test.json&quot; using schema &quot;Text&quot; via &quot;TestJson&quot;" transport="257b42c3:188b06826f6:-7dde">
+                    <headerMessage assocdefid="File Subscribe"
+                        meTy="Message" name="" sch="File Subscribe"
+                        type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="Date-Time" name="rcvdTimestamp"
+                            sch="File Subscribe" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="12:29:23.109 2023/06/12" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="directory"
+                            sch="File Subscribe" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="C:\GitHub\Emerald_APIs\Emeral_API_GuestCheckout\Custom" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="fileName"
+                            sch="File Subscribe" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="test.json" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="fullPath"
+                            sch="File Subscribe" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="C:\GitHub\Emerald_APIs\Emeral_API_GuestCheckout\Custom\test.json" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Date-Time" name="lastModified"
+                            sch="File Subscribe" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="12:21:13.793 2023/06/12" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Long" name="fileSize"
+                            sch="File Subscribe" type="3" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="984" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </headerMessage>
+                    <subconfig _version="1.1"
+                        deleteAfterProcessing="false"
+                        fileName="%%PROJECT/ROOT_DIRECTORY%%/Custom/test.json"
+                        formatter="GH Text" ignoreExisting="false"
+                        retryInterval="10000" transport="257b42c3:188b06826f6:-7dde"/>
+                    <bodyMessage assocdefid="Text" name="Text"
+                        sch="Text" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="1">
+                                <fieldAction anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c coreTypeInt="7" coreTypeName="String"
+                            name="text"
+                            nodeFormatter="JSON.nodeformatter"
+                            sch="Text" type="12" version="1.2">
+                            <fieldExpander
+                                fieldExpanderID="JSON.fieldexpander"
+                                fieldSchema="JSON" fieldSchemaRoot="Object"/>
+                            <contentTree>{"quiz":{"sport":{"q1":{"question":"Which one is correct team name in NBA?","options":["New York Bulls","Los Angeles Kings","Golden State Warriros","Huston Rocket"],"answer":"Huston Rocket"}},"maths":{"q1":{"question":"5 + 7 = ?","options":["10","11","12","13"],"answer":"12"},"q2":{"question":"12 - 8 = ?","options":["1","2","3","4"],"answer":"4"}}}}<defaultActions>
+                                    <defaultMessageActions>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultScalarActions>
+                                </defaultActions>
+                                <updates>
+                                    <updateField path="/text/Object">
+                                    <_c assocdefid="Object"/>
+                                    </updateField>
+                                    <setAction index="0" path="/text/Object/quiz/sport/q1/question">
+                                    <fieldAction
+                                    description="Store copy of field in tag 'question'"
+                                    tN="question" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/Object/quiz/sport/q1/options">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/sport/q1/options/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/sport/q1/options/1">
+                                    <_c name="1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/sport/q1/options/2">
+                                    <_c name="2"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/sport/q1/options/3">
+                                    <_c name="3"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/maths/q1/options">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/maths/q1/options/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/maths/q1/options/1">
+                                    <_c name="1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/maths/q1/options/2">
+                                    <_c name="2"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/maths/q1/options/3">
+                                    <_c name="3"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/maths/q2/options">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/maths/q2/options/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/maths/q2/options/1">
+                                    <_c name="1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/maths/q2/options/2">
+                                    <_c name="2"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/quiz/maths/q2/options/3">
+                                    <_c name="3"/>
+                                    </updateField>
+                                </updates>
+                            </contentTree>
+                            <fieldActionGroup>
+                                <fieldAction type="1">
+                                    <fieldAction type="7"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="257b42c3:188b06826f6:-7da9"
+                selfDescribing="The log actions enables you to output messages to console and a logging file."
+                type="logging_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig append="true" description=""
+                    flush="true" loggingMessage="%%text%%"
+                    name="%%text%%" outputFile="" role="0"/>
+            </editableResource>
+            <editableResource id="257b42c3:188b06826f6:-7d05"
+                selfDescribing="The log actions enables you to output messages to console and a logging file."
+                type="logging_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig append="true" description=""
+                    flush="true"
+                    loggingMessage="&quot;Question 1 is=&quot;%%question%%"
+                    name="&quot;Question 1 is=&quot;%%question%%"
+                    outputFile="" role="0"/>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="SELECT" outputMode="SELECT">
+            <tag defaultValue="" description="" name="text"/>
+            <tag defaultValue="" description="" name="question">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="interfaceOutput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

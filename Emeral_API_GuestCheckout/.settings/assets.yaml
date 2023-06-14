@@ -1,0 +1,136 @@
+name: Emeral_API_GuestCheckout
+projectReferences: 
+resources: 
+  - name: Custom
+    resources: 
+      - name: 'Commerce React Store PUBLIC.ghe'
+  - name: Logical
+    resources: 
+      - name: EmeraldAPIs.scm
+        resources: 
+          - name: 'React Store.scm'
+            resources: 
+              - name: 'Add Item To Cart.opr'
+                resources: 
+                  - name: 'Add Item To Cart.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Check Online Inventory.opr'
+                resources: 
+                  - name: 'Check Online Inventory.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Check Order Info.opr'
+                resources: 
+                  - name: 'Check Order Info.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: Checkout.opr
+                resources: 
+                  - name: Checkout.tsq
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Convert to Guest Shopper.opr'
+                resources: 
+                  - name: 'Convert to Guest Shopper.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Create Billing Shipping Address Info.opr'
+                resources: 
+                  - name: 'Create Billing Shipping Address Info.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Delete Old Payment .opr'
+                resources: 
+                  - name: 'Delete Old Payment .tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Display Product in Cart.opr'
+                resources: 
+                  - name: 'Display Product in Cart.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'GET Top Categories.opr'
+                resources: 
+                  - name: 'GET Top Categories.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Get Cart Contents.opr'
+                resources: 
+                  - name: 'Get Cart Contents.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Navigate to a Category.opr'
+                resources: 
+                  - name: 'Navigate to a Category.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Navigate to a Product.opr'
+                resources: 
+                  - name: 'Navigate to a Product.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Prepare Cart for Checkout.opr'
+                resources: 
+                  - name: 'Prepare Cart for Checkout.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Set Payment Method & Amount.opr'
+                resources: 
+                  - name: 'Set Payment Method & Amount.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Set Shipping Address Info For Order.opr'
+                resources: 
+                  - name: 'Set Shipping Address Info For Order.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+              - name: 'Show All Payment methods.opr'
+                resources: 
+                  - name: 'Show All Payment methods.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /Emeral_API_GuestCheckout
+                        type: tsqProject
+      - name: ForTest
+        resources: 
+          - name: ReadFromJson.tsq
+            type: com.ibm.rational.test.rit.testType
+            dependencies: 
+              - path: /Emeral_API_GuestCheckout
+                type: tsqProject
+          - name: Trim.tsq
+            type: com.ibm.rational.test.rit.testType
+            dependencies: 
+              - path: /Emeral_API_GuestCheckout
+                type: tsqProject

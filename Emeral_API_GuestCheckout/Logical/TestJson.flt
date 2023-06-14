@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1686587232136"
+    createdUser="appscanadmin" id="257b42c3:188b06826f6:-7dde"
+    selfDescribing="A File located somewhere"
+    type="file_contents_transport" updatedTimestamp="1686587232136"
+    updatedUser="appscanadmin" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="" transportTemplateName="File"/>
+</editableResource>

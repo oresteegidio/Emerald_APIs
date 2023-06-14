@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1686586973961"
+    createdUser="appscanadmin" id="257b42c3:188b06826f6:-7e19"
+    type="simple_test_data" updatedTimestamp="1686587003468"
+    updatedUser="appscanadmin" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig autoMapColumns="true" columnCount=""
+        datasourceType="Delimited" escapeQuotedString="true"
+        hasColumnNamesLine="true" linesBeforeColumnNames="0"
+        linesToSkip="0"
+        location="%%PROJECT/ROOT_DIRECTORY%%/Custom/test.json"
+        loop="false" paddingChar="" parsingType="OffsetLength"
+        separator="," treatEmptyStringAsNull="false"
+        treatTextAsEmpty="false" treatTextAsEmptyValue=""
+        treatTextAsNull="false" treatTextAsNullValue="" trim="false"/>
+</editableResource>

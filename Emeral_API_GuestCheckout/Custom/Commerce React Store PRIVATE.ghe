@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1617266644483"
     createdUser="STUART.WALKER" id="d67d2c9:1788c912586:-69c7"
-    type="environment_resource" updatedTimestamp="1617290661878"
-    updatedUser="STUART.WALKER" version="1.0">
-    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    type="environment_resource" updatedTimestamp="1686588188669"
+    updatedUser="appscanadmin" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
         <environmentVariable evdescription="" key="addressId" value="9652022076"/>
         <environmentVariable evdescription="" key="baseUrl_HOST" value="LP1-EU-51627856"/>

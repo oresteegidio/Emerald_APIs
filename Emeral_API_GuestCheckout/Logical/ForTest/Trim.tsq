@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1686304139241"
+    createdUser="appscanadmin" id="-220e2e1d:1889f8e4e94:-7e2a"
+    type="test_resource" updatedTimestamp="1686317106758"
+    updatedUser="appscanadmin" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="7f418283:188a00c1c24:-7dea"
+                selfDescribing="The log actions enables you to output messages to console and a logging file."
+                type="logging_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig append="true" description=""
+                    flush="true"
+                    loggingMessage="newTag prima==%%newTag%%&quot;*****&quot;"
+                    name="newTag prima==%%newTag%%&quot;*****&quot;"
+                    outputFile="" role="0"/>
+            </editableResource>
+            <editableResource id="7f418283:188a00c1c24:-7a0d"
+                selfDescribing="Execute a function and optionally tag the results. Use predefined functions, custom plug-ins and tagged data."
+                type="function_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description=""
+                    eval_type="Chai Mozilla Rhino"
+                    function="regex(&quot;Oreste    &quot;, &quot;/^\s+|\s+$/g&quot;)" name="Run &quot;regex(&quot;Oreste    &quot;, &quot;/^\s+|\s+$/g&quot;)&quot;, store into&quot;newTag1&quot;">
+                    <fieldActionGroup>
+                        <fieldAction
+                            description="Store copy of field in tag 'newTag'"
+                            tN="newTag1" type="2">
+                            <dataAction data="false"
+                                expression="/^\s+|\s+$/g"
+                                findMatch="false" instance="1" type="Regular Expression"/>
+                        </fieldAction>
+                    </fieldActionGroup>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="7f418283:188a00c1c24:-7cf1"
+                selfDescribing="The log actions enables you to output messages to console and a logging file."
+                type="logging_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig append="true" description=""
+                    flush="true"
+                    loggingMessage="newTag dopo=%%newTag%%&quot;*****&quot;"
+                    name="newTag dopo=%%newTag%%&quot;*****&quot;"
+                    outputFile="" role="0"/>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="SELECT" outputMode="SELECT">
+            <tag defaultValue="Oreste      " description="" name="newTag">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="interfaceOutput" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="" description="" name="newTag1"/>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>
