@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1686586918661"
-    createdUser="appscanadmin" id="257b42c3:188b06826f6:-7e51"
+<editableResource createdTimestamp="1686756628369"
+    createdUser="appscanadmin" id="55151fdd:188b9408948:-71c5"
     references="257b42c3:188b06826f6:-7dde" type="test_resource"
-    updatedTimestamp="1686757397482" updatedUser="appscanadmin" version="1.1">
+    updatedTimestamp="1686756842022" updatedUser="appscanadmin" version="1.1">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
-            <editableResource id="55151fdd:188b9408948:-7056"
+            <editableResource id="55151fdd:188b9408948:-7194"
                 references="257b42c3:188b06826f6:-7dde"
                 selfDescribing="Choose a transport and formatter on which to receive and validate a message."
                 type="subscribe_action" version="1.0">
@@ -26,11 +26,11 @@
                         </fieldActionGroup>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
                             sch="File Subscribe" type="11"
-                            value="11:35:31.833 2023/06/14" version="1.2">
+                            value="11:33:38.841 2023/06/14" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
-                                    exp="11:35:31.833 2023/06/14" type="0"/>
+                                    exp="11:33:38.841 2023/06/14" type="0"/>
                                 </fieldAction>
                             </fieldActionGroup>
                         </_c>
@@ -141,13 +141,6 @@
                                     <updateField path="/text/Object">
                                     <_c assocdefid="Object"/>
                                     </updateField>
-                                    <setAction index="0" path="/text/Object/quiz/sport/q1/question">
-                                    <fieldAction
-                                    description="Store copy of field in tag 'SportQuestion'"
-                                    tN="SportQuestion" type="2">
-                                    <dataAction type="Copy"/>
-                                    </fieldAction>
-                                    </setAction>
                                     <updateField path="/text/Object/quiz/sport/q1/options">
                                     <_c assocdefid="Array"/>
                                     </updateField>
@@ -163,13 +156,6 @@
                                     <updateField path="/text/Object/quiz/sport/q1/options/3">
                                     <_c name="3"/>
                                     </updateField>
-                                    <setAction index="0" path="/text/Object/quiz/maths/q1/question">
-                                    <fieldAction
-                                    description="Store copy of field in tag 'MathQuestion'"
-                                    tN="MathQuestion" type="2">
-                                    <dataAction type="Copy"/>
-                                    </fieldAction>
-                                    </setAction>
                                     <updateField path="/text/Object/quiz/maths/q1/options">
                                     <_c assocdefid="Array"/>
                                     </updateField>
@@ -207,49 +193,26 @@
                                     <fieldAction type="7"/>
                                 </fieldAction>
                                 <fieldAction type="1">
-                                    <fieldAction type="0"/>
+                                    <fieldAction exp="%%text%%" type="0"/>
                                 </fieldAction>
                             </fieldActionGroup>
                         </_c>
                     </bodyMessage>
                 </resourceConfig>
             </editableResource>
-            <editableResource id="257b42c3:188b06826f6:-7da9"
-                selfDescribing="The log actions enables you to output messages to console and a logging file."
-                type="logging_action" version="1.0">
-                <loggingConfiguration debug="false"
-                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
-                <resourceConfig append="true" description=""
-                    flush="true" loggingMessage="%%text%%"
-                    name="%%text%%" outputFile="" role="0"/>
-            </editableResource>
-            <editableResource id="257b42c3:188b06826f6:-7d05"
+            <editableResource id="55151fdd:188b9408948:-7100"
                 selfDescribing="The log actions enables you to output messages to console and a logging file."
                 type="logging_action" version="1.0">
                 <loggingConfiguration debug="false"
                     resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
                 <resourceConfig append="true" description=""
                     flush="true"
-                    loggingMessage="&quot;SportQuestions=&quot;%%SportQuestion%%&#xa;&quot;MathQuestion=&quot;%%MathQuestion%%"
-                    name="&quot;SportQuestions=&quot;%%SportQuestion%%"
-                    outputFile="" role="0"/>
+                    loggingMessage="&quot;Text=&quot;%%text%%"
+                    name="&quot;Text=&quot;%%text%%" outputFile="" role="0"/>
             </editableResource>
         </testTree>
-        <tagDataStore inputMode="SELECT" outputMode="SELECT">
+        <tagDataStore inputMode="NONE" outputMode="NONE">
             <tag defaultValue="" description="" name="text"/>
-            <tag defaultValue="no" description="" name="MathQuestion">
-                <tagProps>
-                    <prop key="interfaceInput" value="true"/>
-                    <prop key="interfaceOutput" value="true"/>
-                </tagProps>
-            </tag>
-            <tag defaultValue="noQuestion" description="" name="SportQuestion">
-                <tagProps>
-                    <prop key="interfaceInput" value="true"/>
-                    <prop key="interfaceOutput" value="true"/>
-                </tagProps>
-            </tag>
-            <tag defaultValue="" description="" name="question"/>
         </tagDataStore>
         <testprops messageClearance="false"/>
     </resourceConfig>

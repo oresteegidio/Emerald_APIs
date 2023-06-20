@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1686732035265"
+    createdUser="appscanadmin" id="-b2ce3d1:188b8dbd398:-7b6f"
+    selfDescribing="EC2AMAZ-44NU39T (192.168.68.107) - Windows Performance Monitor (default)"
+    type="probe_resource" updatedTimestamp="1686732035265"
+    updatedUser="appscanadmin" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig defaultFlag="true" name="default"
+        physicalResourceID="-b2ce3d1:188b8dbd398:-7b78" probeID="ghviewer.plugin.perfmon">
+        <PerfMonDatasource configuration="default"/>
+    </resourceConfig>
+</editableResource>

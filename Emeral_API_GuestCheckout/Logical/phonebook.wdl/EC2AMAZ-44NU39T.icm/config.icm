@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1686732033616"
+    createdUser="appscanadmin"
+    id="-b2ce3d1:188b8dbd398:-7c03:1357514459:408339756"
+    type="infrastructure_component_resource"
+    updatedTimestamp="1686732033616" updatedUser="appscanadmin" version="1.1">
+    <syncdetails compare="1686732033531" lastSynced="1686732033616" sourceid="-b2ce3d1:188b8dbd398:-7c03"/>
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig infrastructureType="http_transport">
+        <recordingSettings colour="65,214,195"/>
+    </resourceConfig>
+</editableResource>

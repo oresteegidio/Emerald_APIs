@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1686732033578"
+    createdUser="appscanadmin"
+    id="-b2ce3d1:188b8dbd398:-7c03:1357514459:1544155186"
+    selfDescribing="https EC2AMAZ-44NU39T:5443" type="http_transport"
+    updatedTimestamp="1686732033578" updatedUser="appscanadmin" version="1.0">
+    <syncdetails compare="1686732033531" lastSynced="1686732033578" sourceid="-b2ce3d1:188b8dbd398:-7c03"/>
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="" transportTemplateName="HTTP">
+        <messageProperties
+            ReasonPhrase="No Stub available that matches the request"
+            clientConnectionsPerHost="100" credDomain="" credPassword=""
+            credPreemptive="false" credType="0" credUser=""
+            httpHost="EC2AMAZ-44NU39T" httpNtlmDomain="" httpPort="5443"
+            httpProxyHost="" httpProxyPassword="" httpProxyPort=""
+            httpProxyUsername="" httpResourceRoot=""
+            httpServerSocketBindAddressOverride=""
+            httpServerSocketPortOverride="" httpSocketTimeout=""
+            httpTimeoutResponseCode="503" httpVirtualHost=""
+            proxyType="http.proxy.default" useSsl="true" version="4">
+            <kerberos Anon="false" CStyle="Username / Password"
+                Conf="false" Custom="true" Enabled="false" Integ="false"
+                MutAuth="false" RepDet="false" SSO="false" SeqCheck="false"/>
+            <oauth authURL="" clientassertion="" clientid=""
+                clientsecret="" enabled="false"
+                redirect_url="http://localhost:8080/callback"
+                refreshtoken="" scopes="" tokenendpoint=""/>
+        </messageProperties>
+    </resourceConfig>
+</editableResource>

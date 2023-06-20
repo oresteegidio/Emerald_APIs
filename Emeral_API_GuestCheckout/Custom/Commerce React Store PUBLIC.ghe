@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1617266272444"
     createdUser="STUART.WALKER" id="d67d2c9:1788c912586:-7de1"
-    type="environment_resource" updatedTimestamp="1686588188867"
+    type="environment_resource" updatedTimestamp="1686731998566"
     updatedUser="appscanadmin" version="1.0">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
