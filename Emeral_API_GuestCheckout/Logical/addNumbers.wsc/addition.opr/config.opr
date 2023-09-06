@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1686732033594"
-    createdUser="appscanadmin"
-    id="-b2ce3d1:188b8dbd398:-7c03:1958993858:-807255066"
-    type="operation_resource" updatedTimestamp="1686732033594"
-    updatedUser="appscanadmin" version="1.0">
-    <syncdetails compare="" lastSynced="1686732033594" sourceid="-b2ce3d1:188b8dbd398:-7c03"/>
+<editableResource createdTimestamp="1693315938484"
+    createdUser="Administrator"
+    id="-45b7cfc:18a4179c29c:-7d3c:-867556414:-807255066"
+    type="operation_resource" updatedTimestamp="1693315938484"
+    updatedUser="Administrator" version="1.0">
+    <syncdetails compare="AddNumbers/addition"
+        lastSynced="1693315938484" sourceid="-45b7cfc:18a4179c29c:-7d3c">
+        <sourcepath path="AddNumbers/addition"/>
+    </syncdetails>
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
-    <resourceConfig avgTime="0" color="110,237,216"
-        dependencies="-b2ce3d1:188b8dbd398:-7c03:-697672068:-332410441,-b2ce3d1:188b8dbd398:-7c03:1357514459:408339756"
+    <resourceConfig avgTime="0" color="167,250,230"
+        dependencies="-45b7cfc:18a4179c29c:-7d37,-45b7cfc:18a4179c29c:-7d3c:1731931949:408339756"
         invokeDynamicFormatterID="http.text.message.type"
-        invokeEndFormatterID="HTTP_Message"
         invokeFormatterID="HTTP_Message"
-        invokeTransportID="-b2ce3d1:188b8dbd398:-7c03:1357514459:408339756"
-        maxTime="0" mepEndUsed="true"
-        mepStartSchemaID="-b2ce3d1:188b8dbd398:-7c03:-697672068:-332410441"
-        mepStartSchemaNodeFormatter="rest_nodeformatter"
-        mepStartSchemaroot="create" mepType="IN_OUT" minTime="0"
+        invokeTransportID="-45b7cfc:18a4179c29c:-7d3c:1731931949:408339756"
+        maxTime="0" mepEndSchemaID="-45b7cfc:18a4179c29c:-7d37"
+        mepEndSchemaNodeFormatter="doc_lit"
+        mepEndSchemaroot="addition___OUTPUT___additionResponse"
+        mepEndUsed="true" mepStartSchemaID="-45b7cfc:18a4179c29c:-7d37"
+        mepStartSchemaNodeFormatter="doc_lit"
+        mepStartSchemaroot="addition___INPUT___addition"
+        mepType="IN_OUT" minTime="0"
         stubDynamicFormatterID="http.text.message.type"
-        stubFormatterID="HTTP_Message" stubTransportID="-b2ce3d1:188b8dbd398:-7c03:1357514459:408339756">
+        stubFormatterID="HTTP_Message" stubTransportID="-45b7cfc:18a4179c29c:-7d3c:1731931949:408339756">
         <invokeHeaderNode meTy="Message" type="12" version="1.2">
+            <nodeProcessor id="doc_lit">
+                <extension enabled="false" id="soap.message">
+                    <_c soapVersion="http://schemas.xmlsoap.org/soap/envelope/"/>
+                </extension>
+                <extension enabled="false" id="ws.security"/>
+                <extension enabled="false" id="soap.headers"/>
+                <extension enabled="false" id="ws.addressing"/>
+            </nodeProcessor>
             <fieldActionGroup>
                 <fieldAction enabled="false" type="1">
                     <fieldAction anyOrder="false" enabled="false"
@@ -40,10 +53,10 @@
                     </fieldAction>
                 </fieldActionGroup>
             </_c>
-            <_c meTy="String" name="URL" type="7" value="" version="1.2">
+            <_c meTy="String" name="URL" type="7" value="/addNumbers" version="1.2">
                 <fieldActionGroup>
                     <fieldAction type="0">
-                        <fieldAction type="0"/>
+                        <fieldAction exp="/addNumbers" type="0"/>
                     </fieldAction>
                 </fieldActionGroup>
             </_c>
@@ -69,19 +82,11 @@
                                 ignoreNonPresent="false" type="100"/>
                         </fieldAction>
                     </fieldActionGroup>
-                    <_c meTy="String" name="Content-Type" type="7"
-                        value="application/json" version="1.2">
+                    <_c name="SOAPAction" type="7"
+                        value="&quot;Add&quot;" version="1.2">
                         <fieldActionGroup>
                             <fieldAction type="0">
-                                <fieldAction exp="application/json" type="0"/>
-                            </fieldAction>
-                        </fieldActionGroup>
-                    </_c>
-                    <_c meTy="String" name="Accept" type="7"
-                        value="application/json" version="1.2">
-                        <fieldActionGroup>
-                            <fieldAction type="0">
-                                <fieldAction exp="application/json" type="0"/>
+                                <fieldAction exp="&quot;Add&quot;" type="0"/>
                             </fieldAction>
                         </fieldActionGroup>
                     </_c>
@@ -98,12 +103,11 @@
         </invokeHeaderNode>
         <stubHeaderConfig>
             <_c MessageType="http.text.message.type" Method="POST"
-                URL="/RTCP/examples/phonebook/api/" allowSubPath="false"
+                URL="/addNumbers" allowSubPath="false"
                 consumerType="Participate" filterHeaders="true"
                 filterMethod="true" filterResourcePath="true">
                 <filterHeadersList>
-                    <header disabled="true" name="Content-Type" type="7" value="application/json"/>
-                    <header disabled="true" name="Accept" type="7" value="application/json"/>
+                    <header name="SOAPAction" type="7" value="&quot;Add&quot;"/>
                 </filterHeadersList>
             </_c>
         </stubHeaderConfig>

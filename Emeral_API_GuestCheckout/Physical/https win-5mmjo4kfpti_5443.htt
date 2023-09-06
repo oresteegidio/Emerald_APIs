@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1693315338497"
+    createdUser="Administrator"
+    id="d4cb6fc:18a41619bac:-7b2c:1437688209:1544155186"
+    selfDescribing="https win-5mmjo4kfpti:5443" type="http_transport"
+    updatedTimestamp="1693315338497" updatedUser="Administrator" version="1.0">
+    <syncdetails compare="https win-5mmjo4kfpti:5443"
+        lastSynced="1693315338497" sourceid="d4cb6fc:18a41619bac:-7b2c">
+        <sourcepath path="CalculatorPortBindingService/CalculatorPortBindingSoap11"/>
+    </syncdetails>
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="" transportTemplateName="HTTP">
+        <messageProperties
+            ReasonPhrase="Nessuno Stub disponibile che corrisponde alla richiesta"
+            clientConnectionsPerHost="100" credDomain="" credPassword=""
+            credPreemptive="false" credType="0" credUser=""
+            httpHost="win-5mmjo4kfpti" httpNtlmDomain="" httpPort="5443"
+            httpProxyHost="" httpProxyPassword="" httpProxyPort=""
+            httpProxyUsername="" httpResourceRoot=""
+            httpServerSocketBindAddressOverride=""
+            httpServerSocketPortOverride="" httpSocketTimeout=""
+            httpTimeoutResponseCode="503" httpVirtualHost=""
+            proxyType="http.proxy.default" useSsl="true" version="4">
+            <kerberos Anon="false" CStyle="Nome utente/Password"
+                Conf="false" Custom="true" Enabled="false" Integ="false"
+                MutAuth="false" RepDet="false" SSO="false" SeqCheck="false"/>
+            <oauth authURL="" clientassertion="" clientid=""
+                clientsecret="" enabled="false"
+                redirect_url="http://localhost:8080/callback"
+                refreshtoken="" scopes="" tokenendpoint=""/>
+        </messageProperties>
+    </resourceConfig>
+</editableResource>

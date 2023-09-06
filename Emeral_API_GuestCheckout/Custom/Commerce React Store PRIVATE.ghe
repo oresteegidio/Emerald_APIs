@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1617266644483"
     createdUser="STUART.WALKER" id="d67d2c9:1788c912586:-69c7"
-    type="environment_resource" updatedTimestamp="1686732033563"
-    updatedUser="appscanadmin" version="1.0">
+    type="environment_resource" updatedTimestamp="1693315938343"
+    updatedUser="Administrator" version="1.0">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
         <environmentVariable evdescription="" key="addressId" value="9652022076"/>
@@ -23,8 +23,12 @@
         <environmentVariable evdescription="" key="WCTrustedToken" value="47002%2CjkVOR2vBhFuFWo4cgdfdjmiugZo%2FAHUuWdyLkZiRs4A%3D"/>
         <evbindings>
             <evbinding
+                evLogicalItemId="-45b7cfc:18a4179c29c:-7d3c:1731931949:408339756" evPhysicalItemId="-45b7cfc:18a4179c29c:-7d3c:-1600560688:1544155186"/>
+            <evbinding
                 evLogicalItemId="-b2ce3d1:188b8dbd398:-7c03:1357514459:408339756" evPhysicalItemId="-b2ce3d1:188b8dbd398:-7c03:1357514459:1544155186"/>
             <evbinding evLogicalItemId="6b10b499:1788e004ea0:-7a7b" evPhysicalItemId="6b10b499:1788e004ea0:-7a04"/>
+            <evbinding
+                evLogicalItemId="d4cb6fc:18a41619bac:-7b2c:-2046364207:408339756" evPhysicalItemId="d4cb6fc:18a41619bac:-7b2c:1437688209:1544155186"/>
             <evbinding
                 evLogicalItemId="d67d2c9:1788c912586:-7ec5:-1947498549:408339756" evPhysicalItemId="d67d2c9:1788c912586:-7ec5:299184667:1544155186"/>
             <evbinding
