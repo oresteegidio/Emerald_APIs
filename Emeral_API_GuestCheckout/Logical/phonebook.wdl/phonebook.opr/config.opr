@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1699351612493"
+    createdUser="Administrator" id="-34c9d231:18ba93b90d7:-7ae9"
+    type="operation_resource" updatedTimestamp="1699351612493"
+    updatedUser="Administrator" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig avgTime="0" color="215,170,255"
+        dependencies="-34c9d231:18ba93b90d7:-7deb:1628051527:408339756"
+        invokeDynamicFormatterID="http.text.message.type"
+        invokeEndDynamicFormatterID="http.text.message.type"
+        invokeEndFormatterID="HTTP_Message"
+        invokeEndTransportID="-34c9d231:18ba93b90d7:-7deb:1628051527:408339756"
+        invokeFormatterID="HTTP_Message"
+        invokeTransportID="-34c9d231:18ba93b90d7:-7deb:1628051527:408339756"
+        maxTime="0" mepEndSchemaID="JSON"
+        mepEndSchemaNodeFormatter="JSON.nodeformatter"
+        mepEndSchemaroot="Object" mepEndUsed="true" mepType="IN_OUT"
+        minTime="0" stubDynamicFormatterID="http.text.message.type"
+        stubFormatterID="HTTP_Message" stubTransportID="-34c9d231:18ba93b90d7:-7deb:1628051527:408339756">
+        <invokeHeaderNode meTy="Message" name="" type="12" version="1.2">
+            <fieldActionGroup>
+                <fieldAction enabled="false" type="1">
+                    <fieldAction anyOrder="false" enabled="false"
+                        ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="Method" type="7" value="GET" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction type="0">
+                        <fieldAction exp="GET" type="0"/>
+                    </fieldAction>
+                </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="URL" type="7"
+                value="/RTCP/examples/phonebook/api/" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction type="0">
+                        <fieldAction exp="/RTCP/examples/phonebook/api/" type="0"/>
+                    </fieldAction>
+                </fieldActionGroup>
+            </_c>
+            <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false"
+                            ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                    </fieldAction>
+                </fieldActionGroup>
+                <_c meTy="String" name="Version" type="7" value="1.1" version="1.2">
+                    <fieldActionGroup>
+                        <fieldAction type="0">
+                            <fieldAction exp="1.1" type="0"/>
+                        </fieldAction>
+                    </fieldActionGroup>
+                </_c>
+                <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+                    <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                            <fieldAction anyOrder="false"
+                                enabled="false" ignoreExtra="false"
+                                ignoreNonPresent="false" type="100"/>
+                        </fieldAction>
+                    </fieldActionGroup>
+                    <_c meTy="String" name="Referer" type="7"
+                        value="https://win-5mmjo4kfpti:5443/RTCP/examples/phonebook/index.html" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction
+                                    exp="https://win-5mmjo4kfpti:5443/RTCP/examples/phonebook/index.html" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                    <_c meTy="String" name="Sec-Fetch-Dest" type="7"
+                        value="empty" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction exp="empty" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                    <_c meTy="String" name="Sec-Fetch-Mode" type="7"
+                        value="cors" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction exp="cors" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                    <_c meTy="String" name="Sec-Fetch-Site" type="7"
+                        value="same-origin" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction exp="same-origin" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                </_c>
+            </_c>
+            <_c meTy="String" name="MessageType" type="7"
+                value="http.text.message.type" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction type="0">
+                        <fieldAction exp="http.text.message.type" type="0"/>
+                    </fieldAction>
+                </fieldActionGroup>
+            </_c>
+        </invokeHeaderNode>
+        <stubHeaderConfig>
+            <_c MessageType="http.text.message.type" Method="GET"
+                URL="/RTCP/examples/phonebook/api/" allowSubPath="false"
+                consumerType="Participate" filterHeaders="true"
+                filterMethod="true" filterResourcePath="true">
+                <filterHeadersList>
+                    <header disabled="true" name="Referer" type="7" value="https://win-5mmjo4kfpti:5443/RTCP/examples/phonebook/index.html"/>
+                    <header disabled="true" name="Sec-Fetch-Dest"
+                        type="7" value="empty"/>
+                    <header disabled="true" name="Sec-Fetch-Mode"
+                        type="7" value="cors"/>
+                    <header disabled="true" name="Sec-Fetch-Site"
+                        type="7" value="same-origin"/>
+                </filterHeadersList>
+            </_c>
+        </stubHeaderConfig>
+    </resourceConfig>
+</editableResource>

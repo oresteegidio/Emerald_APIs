@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1617266644483"
     createdUser="STUART.WALKER" id="d67d2c9:1788c912586:-69c7"
-    type="environment_resource" updatedTimestamp="1693315938343"
+    type="environment_resource" updatedTimestamp="1699351394130"
     updatedUser="Administrator" version="1.0">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
@@ -22,6 +22,8 @@
         <environmentVariable evdescription="" key="WCToken" value="47002%2CKZJdlbaa%2BZfBvcPAjx5iAYBMMO2ztGRjwfDG6g0iKUe%2BCTzPKO7LGybWB7kp%2F2VoFXCntrQMBsOyGO183p9ec01SYMwgqwjQBiJWrwHlDXijdv3XmpEWORzZz1N..."/>
         <environmentVariable evdescription="" key="WCTrustedToken" value="47002%2CjkVOR2vBhFuFWo4cgdfdjmiugZo%2FAHUuWdyLkZiRs4A%3D"/>
         <evbindings>
+            <evbinding
+                evLogicalItemId="-34c9d231:18ba93b90d7:-7deb:1628051527:408339756" evPhysicalItemId="-34c9d231:18ba93b90d7:-7deb:1628051527:1544155186"/>
             <evbinding
                 evLogicalItemId="-45b7cfc:18a4179c29c:-7d3c:1731931949:408339756" evPhysicalItemId="-45b7cfc:18a4179c29c:-7d3c:-1600560688:1544155186"/>
             <evbinding

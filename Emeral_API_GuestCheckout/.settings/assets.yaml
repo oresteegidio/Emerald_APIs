@@ -1,9 +1,6 @@
 name: Emeral_API_GuestCheckout
 projectReferences: 
 resources: 
-  - name: Custom
-    resources: 
-      - name: 'Commerce React Store PUBLIC.ghe'
   - name: Logical
     resources: 
       - name: EmeraldAPIs.scm
@@ -149,6 +146,22 @@ resources:
           - name: addition.opr
             resources: 
               - name: additionTest.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /Emeral_API_GuestCheckout
+                    type: tsqProject
+      - name: phonebook.wdl
+        resources: 
+          - name: 'phonebook-id PUT.opr'
+            resources: 
+              - name: Update.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /Emeral_API_GuestCheckout
+                    type: tsqProject
+          - name: phonebook.opr
+            resources: 
+              - name: ListOFUser.tsq
                 type: com.ibm.rational.test.rit.testType
                 dependencies: 
                   - path: /Emeral_API_GuestCheckout

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1699351394271"
+    createdUser="Administrator"
+    id="-34c9d231:18ba93b90d7:-7deb:1628051527:1544155186"
+    selfDescribing="https WIN-5MMJO4KFPTI:5443" type="http_transport"
+    updatedTimestamp="1699351394271" updatedUser="Administrator" version="1.0">
+    <syncdetails compare="1699351394004" lastSynced="1699351394271" sourceid="-34c9d231:18ba93b90d7:-7deb"/>
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="" transportTemplateName="HTTP">
+        <messageProperties
+            ReasonPhrase="No Stub available that matches the request"
+            clientConnectionsPerHost="100" credDomain="" credPassword=""
+            credPreemptive="false" credType="0" credUser=""
+            httpHost="WIN-5MMJO4KFPTI" httpNtlmDomain="" httpPort="5443"
+            httpProxyHost="" httpProxyPassword="" httpProxyPort=""
+            httpProxyUsername="" httpResourceRoot=""
+            httpServerSocketBindAddressOverride=""
+            httpServerSocketPortOverride="" httpSocketTimeout=""
+            httpTimeoutResponseCode="503" httpVirtualHost=""
+            proxyType="http.proxy.default" useSsl="true" version="4">
+            <kerberos Anon="false" CStyle="Username / Password"
+                Conf="false" Custom="true" Enabled="false" Integ="false"
+                MutAuth="false" RepDet="false" SSO="false" SeqCheck="false"/>
+            <oauth authURL="" clientassertion="" clientid=""
+                clientsecret="" enabled="false"
+                redirect_url="http://localhost:8080/callback"
+                refreshtoken="" scopes="" tokenendpoint=""/>
+        </messageProperties>
+    </resourceConfig>
+</editableResource>
